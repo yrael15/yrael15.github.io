@@ -219,6 +219,15 @@
     position: relative;
   }
   
+  .menu-toggle {
+    display: none; /* Hide by default */
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: white;
+  }
+  
   .navbar a {
     text-decoration: none;
     padding: 10px;
