@@ -282,7 +282,7 @@ footer {
 
 .info-box {
   flex: 1 1 45%; /* Responsive: two per row, shrink if needed */
-  background-color: var(--primary-2);
+  background-color: #8b52ff;
   padding: 1.5em;
   border-radius: 1.5em;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
