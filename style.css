@@ -226,7 +226,7 @@ footer {
 .dropdown-menu {
   position: absolute;
   top: 100%;
-  left: 0;
+  /* left: 0; */
   display: none;
   background-color: #cfb8ff;
   z-index: 1000;
