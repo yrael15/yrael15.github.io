@@ -305,6 +305,12 @@ footer {
   line-height: 1.6;
 }
 
+.cute-box img {
+  width: 100%;       /* Makes image fill the box */
+  height: auto;      /* Maintains aspect ratio */
+  border-radius: 1rem; /* Optional: for rounded corners */
+  display: block;
+}
 /* Mobile fallback: stack vertically */
 @media (max-width: 768px) {
   .info-box {
