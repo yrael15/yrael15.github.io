@@ -278,3 +278,48 @@
   .nested-dropdown:hover .nested-menu {
     display: block;
   }    
+
+  /* Base styles */
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar li {
+  position: relative;
+}
+
+/* Dropdown menus hidden by default */
+.dropdown-menu,
+.nested-menu {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  border: 1px solid #ddd;
+  z-index: 1000;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover > .dropdown-menu {
+  display: block;
+}
+
+/* Show nested menu on hover */
+.nested-dropdown:hover > .nested-menu {
+  display: block;
+}
+
+/* Style for links */
+.navbar a {
+  display: block;
+  padding: 8px 12px;
+  color: #333;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: #6aaec6;
+  color: white;
+}
