@@ -317,10 +317,3 @@ footer {
     flex: 1 1 100%;
   }
 }
-
-/* logo img */
-.logo-img {
-  height: 40px; /* adjust size as needed */
-  width: auto;
-  display: block;
-}
