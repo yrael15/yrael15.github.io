@@ -6,11 +6,11 @@
   }
   
   body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: #f9f9f9;
-    color: #333;
-    line-height: 1.6;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
   }
+  
   
   /* Color Palette */
   :root {
@@ -165,42 +165,6 @@
   .thumbnails img:hover {
     border: 2px solid var(--primary-1);
   }
-/* NAVBAR BASE STYLES */
-.navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: var(--primary-1);
-    padding: 1em;
-    position: relative;
-  }
-  
-  .navbar .logo {
-    color: white;
-    font-weight: bold;
-    font-size: 1.2em;
-  }
-  
-  .navbar .nav-links {
-    display: flex;
-    gap: 1.5em;
-    list-style: none;
-  }
-  
-  .navbar .nav-links a {
-    text-decoration: none;
-    color: white;
-    font-weight: 500;
-  }
-  
-  .menu-toggle {
-    display: none;
-    background: none;
-    color: white;
-    font-size: 2em;
-    border: none;
-    cursor: pointer;
-  }
   
   /* MOBILE MENU */
   @media (max-width: 768px) {
@@ -227,207 +191,86 @@
       text-align: center;
     }
   }
-/* DROPDOWN MENU */
-.dropdown {
+
+/*Navbar and Dropdown*/
+  .navbar {
+    background-color: #6aaec6;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    flex-wrap: wrap;
     position: relative;
   }
   
-  .dropdown-menu {
-    display: none;
-    position: absolute;
-    background-color: var(--primary-1);
-    list-style: none;
-    margin: 0;
-    padding: 0.5em 0;
-    min-width: 200px;
-    z-index: 10;
-  }
-  
-  .dropdown:hover .dropdown-menu {
-    display: block;
-  }
-  
-  .dropdown-menu li {
-    position: relative;
-  }
-  
-  .dropdown-menu a {
-    display: block;
-    padding: 0.5em 1em;
+  .logo {
+    font-size: 1.5rem;
     color: white;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .navbar li {
+    position: relative;
+  }
+  
+  .navbar a {
     text-decoration: none;
+    padding: 10px;
+    color: white;
+    display: block;
   }
   
-  .dropdown-menu a:hover {
-    background-color: var(--secondary);
+  .navbar a:hover {
+    background-color: #8b52ff;
+    color: #fff;
   }
   
-  /* NESTED DROPDOWN */
-  .nested-dropdown .nested-menu {
+  /* Top-level dropdown */
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    background-color: #cfb8ff;
+    z-index: 1000;
+    min-width: 200px;
+    white-space: nowrap;
+  }
+  
+  .dropdown:hover > .dropdown-menu {
+    display: block;
+  }
+  
+  /* Nested dropdowns */
+  .nested-dropdown {
+    position: relative;
+  }
+  
+  .nested-menu {
     display: none;
     position: absolute;
     top: 0;
     left: 100%;
-    background-color: var(--primary-1);
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    min-width: 180px;
+    background-color: #eec3fa;
+    min-width: 160px;
+    z-index: 1001;
+    white-space: nowrap;
+    overflow: hidden;
   }
   
-  .nested-dropdown:hover .nested-menu {
+  .nested-menu.open-left {
+    left: auto;
+    right: 100%;
+  }
+  
+  .nested-dropdown:hover > .nested-menu {
     display: block;
-  }    
-
-  /* Base styles */
-.navbar ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.navbar li {
-  position: relative;
-}
-
-/* Dropdown menus hidden by default */
-.dropdown-menu {
-  display: none;
-  position: absolute;
-  background-color: white;
-  min-width: 160px;
-  border: 1px solid #ddd;
-  z-index: 1000;
-}
-.nested-menu {
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 100%;  /* This makes the submenu open to the right (default) */
-  /* white-space: nowrap;  Prevent text from wrapping */
-  background-color: white;
-  border: 1px solid #ddd;
-  display: none;
-  min-width: 160px;
-  z-index: 1000;
-}
-
-/* When nested-menu would go off-screen, open to the left */
-.dropdown-menu > .nested-dropdown:hover > .nested-menu {
-  display: block;
-}
-
-/* Optional: flip submenu direction if near the right edge */
-.nested-menu.open-left {
-  left: auto;
-  right: 100%;  /* Opens submenu to the left */
-}
-
-/* Show dropdown on hover */
-.dropdown:hover > .dropdown-menu {
-  display: block;
-}
-
-/* Show nested menu on hover */
-.nested-dropdown:hover > .nested-menu {
-  display: block;
-}
-
-/* Style for links */
-.navbar a {
-  display: block;
-  padding: 8px 12px;
-  color: #333;
-  text-decoration: none;
-}
-
-.navbar a:hover {
-  background-color: #6aaec6;
-  color: white;
-}
-
-body {
-  margin: 0;
-  overflow-x: hidden; /* Prevent page from widening */
-}
-
-/* NAVBAR AND DROPDOWNS */
-.navbar {
-  position: relative;
-  background-color: #6aaec6;
-  display: flex;
-  align-items: center;
-  padding: 0.5rem 1rem;
-  flex-wrap: wrap;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 1rem;
-  padding: 0;
-  margin: 0;
-  position: relative;
-}
-
-.navbar li {
-  position: relative;
-}
-
-.navbar a {
-  text-decoration: none;
-  padding: 10px;
-  color: white;
-  background-color: transparent;
-  display: block;
-}
-
-.navbar a:hover {
-  background-color: #8b52ff;
-  color: #fff;
-}
-
-/* Top-level dropdown */
-.dropdown-menu {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  display: none;
-  background-color: #cfb8ff;
-  z-index: 1000;
-  min-width: 200px;
-  white-space: nowrap;
-}
-
-.dropdown:hover > .dropdown-menu {
-  display: block;
-}
-
-/* Nested dropdowns */
-.nested-dropdown {
-  position: relative;
-}
-
-.nested-menu {
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 100%; /* Default: open right */
-  background-color: #eec3fa;
-  min-width: 160px;
-  z-index: 1001;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
-/* Flip direction if needed */
-.nested-menu.open-left {
-  left: auto;
-  right: 100%;
-}
-
-/* Show nested menu on hover */
-.nested-dropdown:hover > .nested-menu {
-  display: block;
-}
-
+  }
+  
