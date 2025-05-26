@@ -14,9 +14,9 @@ function loadIncludes() {
   }
 
 // Navigation toggle (mobile)
-document.getElementById('menu-toggle').addEventListener('click', function () {
-  document.getElementById('nav-links').classList.toggle('active');
-});
+// document.getElementById('menu-toggle').addEventListener('click', function () {
+//   document.getElementById('nav-links').classList.toggle('active');
+// });
 
 document.querySelectorAll('.nested-dropdown').forEach(item => {
   item.addEventListener('mouseenter', () => {
