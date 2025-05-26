@@ -277,7 +277,7 @@ footer {
   display: flex;
   flex-wrap: wrap;
   gap: 2em;
-  margin:  0 clamp(1em, 5vw, 4em);
+  margin:  0 clamp(5em, 5vw, 4em);
 }
 
 .info-box {
