@@ -306,7 +306,7 @@ footer {
 }
 
 .cute-box img {
-  width: 50%;       /* Makes image fill the box */
+  width: auto;       
   height: auto;      /* Maintains aspect ratio */
   border-radius: 1rem; /* Optional: for rounded corners */
   display: block;
