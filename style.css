@@ -306,9 +306,11 @@ footer {
 }
 
 .cute-box img {
-  width: auto;       
-  height: auto;      /* Maintains aspect ratio */
-  border-radius: 1rem; /* Optional: for rounded corners */
+  width: 100%;            /* Scale horizontally */
+  height: auto;           /* Maintain aspect ratio */
+  max-height: 200px;      /* Prevent it from getting too tall */
+  object-fit: cover;      /* Crop if needed while preserving aspect ratio */
+  border-radius: 0.75rem;
   display: block;
 }
 /* Mobile fallback: stack vertically */
