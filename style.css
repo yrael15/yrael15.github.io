@@ -307,12 +307,16 @@ footer {
 }
 
 .info-box img {
-  width: 100%;            /* Scale horizontally */
-  height: auto;           /* Maintain aspect ratio */
-  max-height: 200px;      /* Prevent it from getting too tall */
-  object-fit: cover;      /* Crop if needed while preserving aspect ratio */
+  /* width: 100%;
+  height: auto;
+  max-height: 200px;
+  object-fit: cover;
   border-radius: 0.75rem;
-  display: block;
+  display: block; */
+  box-sizing: border-box;
+  height: auto;
+  max-width: 100%;
+  vertical-align: bottom;
 }
 /* Mobile fallback: stack vertically */
 @media (max-width: 768px) {
