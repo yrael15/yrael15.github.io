@@ -270,3 +270,44 @@ footer {
 .nested-dropdown:hover > .nested-menu {
   display: block;
 }
+
+
+/* Cute boxes */
+.info-box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  margin: 2em 0;
+}
+
+.info-box {
+  flex: 1 1 45%; /* Responsive: two per row, shrink if needed */
+  background-color: var(--primary-2);
+  padding: 1.5em;
+  border-radius: 1.5em;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #333;
+}
+
+.info-box:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.info-box h2 {
+  color: var(--secondary);
+  margin-bottom: 0.5em;
+}
+
+.info-box p {
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+/* Mobile fallback: stack vertically */
+@media (max-width: 768px) {
+  .info-box {
+    flex: 1 1 100%;
+  }
+}
