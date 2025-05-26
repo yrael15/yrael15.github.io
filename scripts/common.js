@@ -12,15 +12,11 @@ function loadIncludes() {
   if (document.getElementById('nav-placeholder')) {
     loadIncludes();
   }
-// Navigation toggle (mobile)
-const toggle = document.getElementById('menu-toggle');
-const navLinks = document.getElementById('nav-links');
 
-if (toggle && navLinks) {
-  toggle.addEventListener('click', () => {
-    navLinks.classList.toggle('show');
-  });
-}  
+// Navigation toggle (mobile)
+document.getElementById('menu-toggle').addEventListener('click', function () {
+  document.getElementById('nav-links').classList.toggle('active');
+});
 
 document.querySelectorAll('.nested-dropdown').forEach(item => {
   item.addEventListener('mouseenter', () => {
