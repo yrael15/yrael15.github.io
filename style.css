@@ -306,9 +306,9 @@ footer {
   line-height: 1.6;
 }
 
-.cute-box img {
+.info-box img {
   width: 100%;            /* Scale horizontally */
-  height: 100%;           /* Maintain aspect ratio */
+  height: auto;           /* Maintain aspect ratio */
   max-height: 200px;      /* Prevent it from getting too tall */
   object-fit: cover;      /* Crop if needed while preserving aspect ratio */
   border-radius: 0.75rem;
