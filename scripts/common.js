@@ -22,28 +22,28 @@ if (toggle && navLinks) {
   });
 }  
 
-// document.querySelectorAll('.nested-dropdown').forEach(item => {
-//   item.addEventListener('mouseenter', () => {
-//     const submenu = item.querySelector('.nested-menu');
-//     if (!submenu) return;
+document.querySelectorAll('.nested-dropdown').forEach(item => {
+  item.addEventListener('mouseenter', () => {
+    const submenu = item.querySelector('.nested-menu');
+    if (!submenu) return;
 
-//     submenu.style.display = 'block'; // Show temporarily to measure
-//     const rect = submenu.getBoundingClientRect();
-//     const viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+    submenu.style.display = 'block'; // Show temporarily to measure
+    const rect = submenu.getBoundingClientRect();
+    const viewportWidth = window.innerWidth || document.documentElement.clientWidth;
 
-//     if (rect.right > viewportWidth) {
-//       submenu.classList.add('open-left');
-//     } else {
-//       submenu.classList.remove('open-left');
-//     }
+    if (rect.right > viewportWidth) {
+      submenu.classList.add('open-left');
+    } else {
+      submenu.classList.remove('open-left');
+    }
 
-//     submenu.style.display = ''; // Let CSS handle display again
-//   });
+    submenu.style.display = ''; // Let CSS handle display again
+  });
 
-//   item.addEventListener('mouseleave', () => {
-//     const submenu = item.querySelector('.nested-menu');
-//     if (submenu) {
-//       submenu.classList.remove('open-left');
-//     }
-//   });
-// });
+  item.addEventListener('mouseleave', () => {
+    const submenu = item.querySelector('.nested-menu');
+    if (submenu) {
+      submenu.classList.remove('open-left');
+    }
+  });
+});
