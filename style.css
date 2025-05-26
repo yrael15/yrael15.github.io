@@ -293,12 +293,26 @@
 /* Dropdown menus hidden by default */
 .dropdown-menu,
 .nested-menu {
-  display: none;
   position: absolute;
+  top: 0;
+  left: 100%;  /* This makes the submenu open to the right (default) */
+  white-space: nowrap;  /* Prevent text from wrapping */
   background-color: white;
-  min-width: 160px;
   border: 1px solid #ddd;
+  display: none;
+  min-width: 160px;
   z-index: 1000;
+}
+
+/* When nested-menu would go off-screen, open to the left */
+.dropdown-menu > .nested-dropdown:hover > .nested-menu {
+  display: block;
+}
+
+/* Optional: flip submenu direction if near the right edge */
+.nested-menu.open-left {
+  left: auto;
+  right: 100%;  /* Opens submenu to the left */
 }
 
 /* Show dropdown on hover */
