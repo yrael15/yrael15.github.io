@@ -197,7 +197,7 @@
   /* Mobile Only */
   @media (max-width: 768px) {
     .menu-toggle {
-      display: block; /* Show hamburger only under 768px */
+      display: block; /* Show only on mobile */
     }
   
     .nav-links {
@@ -210,7 +210,7 @@
       display: flex;
     }
   }
-
+  
   .navbar a {
     text-decoration: none;
     padding: 10px;
