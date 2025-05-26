@@ -1,15 +1,14 @@
-//Character carousel 
-const charTrack = document.getElementById('carousel-track');
+const track = document.getElementById('carousel-track');
 const nextBtn = document.getElementById('nextBtn');
 const thumbs = document.querySelectorAll('.thumbnails img');
 
 let index = 0;
 let autoPlay = true;
-const totalSlides = charTrack.children.length;
+const totalSlides = track.children.length;
 
 function goToSlide(i) {
   index = i;
-  charTrack.style.transform = `translateX(-${i * 100}%)`;
+  track.style.transform = `translateX(-${i * 100}%)`;
 }
 
 function nextSlide() {
