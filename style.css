@@ -278,6 +278,7 @@ footer {
   flex-wrap: wrap;
   gap: 2em;
   margin:  2em 5em;
+  justify-content: center;
 }
 
 .info-box {
