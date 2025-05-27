@@ -308,7 +308,7 @@ footer {
 }
 
 .info-box img {
-  width:80%;            /* Scale horizontally */
+  width: 80%;            /* Scale horizontally */
   height: auto;           /* Maintain aspect ratio */
   object-fit: contain;
   margin: 0 auto 1rem;
