@@ -281,7 +281,7 @@ footer {
 }
 
 .info-box {
-  flex: 1 1 45%; /* Responsive: two per row, shrink if needed */
+  width: 40%;
   background-color: #36454F;
   padding: 1.5em;
   border-radius: 1.5em;
@@ -307,16 +307,11 @@ footer {
 }
 
 .info-box img {
-  /* width: 100%;
-  height: auto;
-  max-height: 200px;
-  object-fit: cover;
-  border-radius: 0.75rem;
-  display: block; */
-  box-sizing: border-box;
-  height: auto;
-  max-width: 100%;
-  vertical-align: bottom;
+  width:80%;            /* Scale horizontally */
+  height: auto;           /* Maintain aspect ratio */
+  object-fit: contain;
+  margin: 0 auto 1rem;
+  display: block;
 }
 /* Mobile fallback: stack vertically */
 @media (max-width: 768px) {
