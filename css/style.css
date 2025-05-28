@@ -9,7 +9,7 @@ body {
   margin: 0;
   font-family: 'Helvetica Now', Helvetica, Arial, sans-serif;
   overflow-x: hidden;
-  background: var(--primary-1);
+  background: linear-gradient(135deg, #6aaec6, #eec3fa);
   padding-bottom: 60px; /* height of footer */
 }
 
@@ -489,4 +489,78 @@ nav.navbar a.logo-link:hover {
 a:focus, button:focus {
   outline: 2px solid var(--primary-3);
   outline-offset: 2px;
+}
+
+.three-columns {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  padding: 4rem 2rem;
+  background-color: transparent;
+  color: #ffffff;
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.column {
+  background-color: transparent; /* Remove box background */
+  padding: 0 2rem;
+  position: relative;
+}
+
+.column:hover {
+  transform: translateY(-5px);
+}
+
+.column h3 {
+  color: var(--primary-2, #cfb8ff);
+  margin-bottom: 1rem;
+}
+
+.column p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.column .button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--secondary, #8b52ff);
+  color: white;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+}
+
+.column .button:hover {
+  background-color: #733bdc;
+}
+
+.column:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 1px;
+  background-color: rgba(255, 255, 255, 0.2); /* Subtle vertical line */
+}
+
+.column h3 {
+  text-align: center;
+  color: #82745f;
+}
+
+.column p {
+  color: #000000; /* Paragraph text in black */
+}
+
+.column-image {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  object-fit: cover;
 }

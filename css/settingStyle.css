@@ -1,0 +1,62 @@
+main {
+  width: 100%;
+}
+
+.city-section {
+  margin-bottom: 4rem;
+}
+
+.section-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.section-content img {
+  flex: 1 1 250px;
+  max-width: 300px; /* smaller image */
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+
+.section-content .text {
+  flex: 1 1 300px;
+  max-width: 500px;
+}
+
+.section-content .text h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #82745f;
+}
+
+.divider {
+  height: 2px;
+  margin: 3rem auto;
+  background: linear-gradient(to right, #cfb8ff, #8b52ff, #eec3fa);
+  width: 80%;
+  border-radius: 2px;
+}
+
+.reverse .section-content {
+  flex-direction: row-reverse;
+}
+
+@media (max-width: 768px) {
+  .section-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .reverse .section-content {
+    flex-direction: column;
+  }
+
+  .section-content img,
+  .section-content .text {
+    max-width: 100%;
+  }
+}
