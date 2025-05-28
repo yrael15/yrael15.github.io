@@ -7,7 +7,7 @@
 
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Helvetica Now', Helvetica, Arial, sans-serif;
   overflow-x: hidden;
   background: var(--primary-1);
   padding-bottom: 60px; /* height of footer */
