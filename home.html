@@ -1,38 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Home - My World</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Bloom&Blight</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/heroStyle.css">
+  <link rel="stylesheet" href="css/footerStyle.css">
 </head>
 <body>
 
   <div id="nav-placeholder"></div> 
 
-  <div class="embed-row">
-    <div class="embed-item">
-      <h2>Season 2 Trailer</h2>
-      <div class="media-container">
-        <iframe 
-          src="https://www.youtube.com/embed/X_TRAY2-JHM" 
-          title="YouTube video player" 
-          allowfullscreen>
-        </iframe>
-      </div>
-    </div>
-  
-    <div class="embed-item">
-      <h2>Spotify Playlist</h2>
-      <div class="media-container">
-      <iframe 
-        src="https://open.spotify.com/embed/show/3zkX7azMygmGSxMFVG7QKJ?utm_source=generator" 
-        frameborder="0" 
-        allowtransparency="true" 
-        allow="encrypted-media">
-      </iframe>
-    </div>
-    </div>
+  <div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <img src="images\characters\Website_Banner_Bloom_Blight.png.png" style="width:100%">
+    <div class="caption-text">Members of Bloom!</div>
   </div>
+
+  <div class="mySlides fade">
+    <img src="images/logo/website_banner_bloom_blight_2.png" style="width:100%">
+    <div class="caption-text">What is Bloom and Blight?</div>
+  </div>
+
+  <div class="mySlides fade">
+    <img src="images/logo/BloomBlight_Podcast_Album_Cover.png" style="width:100%">
+    <div class="caption-text">Catch up on the latest episode!</div>
+  </div>
+
+  <div class="mySlides fade">
+    <img src="images/logo/discord.png" style="width:100%">
+    <div class="caption-text">Join our Discord to have access to even more Bloom and Blight content!</div>
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  </div>
+  <br>
+
+  <div style="text-align:center">
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+  </div>
+
+
 
   <div class="info-box-container">
     <div class="info-box">
@@ -48,6 +63,18 @@
     </div>
   </div>
   <div id="footer-placeholder"></div>
+  <div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <div class="modal-text">
+      <h2 id="modalTitle"></h2>
+      <p id="modalDescription"></p>
+    </div>
+    <img id="modalImage" src="" alt="Modal Content">
+  </div>
+</div>
+
   <script src="scripts/common.js"></script>
+  <script src="scripts/hero.js"></script>
 </body>
 </html>

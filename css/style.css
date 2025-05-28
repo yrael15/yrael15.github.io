@@ -76,25 +76,6 @@ p {
   margin-bottom: 1em;
 }
 
-/* Footer */
-footer {
-  background: var(--primary-2);
-  color: white;
-  text-align: center;
-  padding: 0.5em;
-  margin-top: 3em;
-  position: fixed;
-  bottom: 0;
-  width: 100vw;
-}
-
-@media (min-width: 769px) {
-  footer {
-    position: fixed;
-    bottom: 0;
-  }
-}
-
 .carousel {
   position: relative;
   width: 100%;
@@ -196,7 +177,7 @@ footer {
 }
 
 .navbar {
-  background-color: #eec3fa;
+  background-color: var(--primary-1);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -224,7 +205,7 @@ footer {
   display: flex;
   align-items: center;     /* vertical center */
   height: 40px;            /* fixed height to align */
-  color: white;
+  color: black;
   text-decoration: none;
 }
 
