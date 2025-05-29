@@ -4,72 +4,92 @@
   <meta charset="UTF-8">
   <title>About Us</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/aboutStyle.css">
   <link rel="stylesheet" href="css/footerStyle.css">
 </head>
 <body>
 
   <div id="nav-placeholder"></div> 
 
-  <div class="container">
-  <hr>
-  <h1>About Us</h1></hr>
-  <p>This is the about page. Here you can learn more about us.</p>
-  </div>
-  <div class="carousel">
-    <div class="carousel-track" id="carousel-track">
-      <div class="carousel-item">
-        <div class="carousel-content">
-          <img src="https://via.placeholder.com/300x300?text=Cast+1" alt="Cast 1">
-          <div class="text-block">
-            <h2>Dave 1</h2>
-            <p>Lovely Person</p>
+  <main class="page about-page">
+
+    <!-- Top Section: About, Support, and Setting Side-by-Side -->
+    <section class="section top-grid-container">
+      <div class="top-grid">
+        <!-- About Us Column -->
+        <div class="text-block about-block">
+          <h2 class="section-title center">About Us</h2>
+          <p>We are a queer and trans led Girl by Moonlight actual play podcast following the titular magical girl team Bloom. After securing victory against their nemesis at a devastating cost, the strained team finds themselves drawn back together as whispers of evil begin again.</p>
+        </div>
+
+        <!-- Support Column -->
+        <div class="text-block support-block">
+          <h2 class="section-title center">Support the Show</h2>
+          <p>If you love what we’re doing and want to help keep the story going, you can support us directly.</p>
+          <div class="button-group center">
+            <a href="https://pally.gg/p/bloomandblight" class="button support-button">Support the Show</a>
           </div>
         </div>
-      </div>
-  
-      <div class="carousel-item">
-        <div class="carousel-content">
-          <img src="https://via.placeholder.com/300x300?text=Cast+2" alt="Cast 2">
-          <div class="text-block">
-            <h2>Dave 2</h2>
-            <p>Cool Person</p>
-          </div>
+
+        <!-- Setting Column -->
+        <div class="text-block setting-block">
+          <h2 class="section-title center">Setting</h2>
+          <p>Our show is set in Oliva Bay, a west coast US city sitting on a vast bay featuring the historical Oliva Bay University. Although the city faces unique challenges and dangers not seen by other major metro areas, Oliva Bay has always enjoyed protection from generations of Magical Girls.</p>
         </div>
       </div>
-  
-      <div class="carousel-item">
-        <div class="carousel-content">
-          <img src="https://via.placeholder.com/300x300?text=Cast+3" alt="Cast 3">
-          <div class="text-block">
-            <h2>Dave 3</h2>
-            <p>Sus Person</p>
-          </div>
+    </section>
+
+    <!-- Meet the Cast Section -->
+    <section class="section cast-section" id="cast">
+      <h2 class="section-title center">Meet the Cast</h2>
+      <div class="grid cast-grid">
+        <div class="cast-card">
+          <img src="images/cast/taylor.webp" alt="Taylor" class="profile-image" />
+          <h3 class="cast-name">Taylor (she/her)</h3><br>
+          <h4 class="cast-title">Storyteller</h4>
+          <p class="cast-bio">Taylor is a Bi Indigenous, TTRPG Performer, streamer, writer, and producer! You can find her playing games, doing creative directing, and all around having fun on High Shelf Collective and Apochromatic Unlimited or adventuring with her pups! <br><a href="https://bsky.app/profile/potaytayto.bsky.social">@potaytayto</a></p>
         </div>
-      </div>
-  
-      <div class="carousel-item">
-        <div class="carousel-content">
-          <img src="https://via.placeholder.com/300x300?text=Cast+4" alt="Cast 4">
-          <div class="text-block">
-            <h2>Dave 4</h2>
-            <p>5/7 Person</p>
-          </div>
+
+        <div class="cast-card">
+          <img src="images/cast/candace-1.webp" alt="Candace" class="profile-image" />
+          <h3 class="cast-name">Candace (they/she)</h3><br>
+          <h4 class="cast-title">Cast (Belladonna)</h4>
+          <p class="cast-bio">Candace, also known as Candace the Magnificent, is a Black queer NB voice actor, TTRPG performer, and writer. When they’re not working, she enjoys collecting books, spending time with her two cats, and making beautiful things. <br><a href="https://bsky.app/profile/thecandacemarie.bsky.social">@thecandacemarie</a></p>
         </div>
-      </div>
-  
-      <div class="carousel-item">
-        <div class="carousel-content">
-          <img src="https://via.placeholder.com/300x300?text=Cast+5" alt="Cast 5">
-          <div class="text-block">
-            <h2>Dave 5</h2>
-            <p>Short Person</p>
-          </div>
+
+        <div class="cast-card">
+          <img src="images\cast\logan.webp" alt="Logan" class="profile-image" />
+          <h3 class="cast-name">Logan (he/him)</h3><br>
+          <h4 class="cast-title">Cast (Wolfsbane)</h4>
+          <p class="cast-bio">Logan is a biracial queer writer, performer, game designer, both a cat & dog dad, IT professional, and admin for Apochromatic Unlimited. You can spot him musing on Twitter about TTRPGs, giant robots, and magical girls. <br><a href="https://bsky.app/profile/holloworange.bsky.social">@holloworange</a></p>
         </div>
+
+        <div class="cast-card">
+          <img src="images\cast\dani.webp" alt="Dani" class="profile-image" />
+          <h3 class="cast-name">Dani (she/her)</h3><br>
+          <h4 class="cast-title">Cast (Iris)</h4>
+          <p class="cast-bio">Dani is a mixed Korean TTRPGer whose most recent hyperfixations include VRising and organizing data. She cosplays, is the proud human of two small dogs, and has a deep passion for collaborative storytelling. Dani is currently working on Darrington Press’s Daggerheart! <br><a href="https://bsky.app/profile/bitterthorne.bsky.social">@bitterthorne</a></p>
+        </div>
+
+        <div class="cast-card">
+          <img src="images\cast\anna2023-4-2.webp" alt="Anna" class="profile-image" />
+          <h3 class="cast-name">Anna (she/her)</h3><br>
+          <h4 class="cast-title">Producer, Cast (Larkspur)</h4>
+          <p class="cast-bio">Anna, a.k.a. ArchivalDustBunny, is a queer and trans advocate, museum worker, and TTRPG performer and producer. You can find her across a variety of shows often playing characters burdened with legacy, healing from trauma, or pulling at castmates’ heartstrings. <br><a href="https://bsky.app/profile/archivaldustbunny.bsky.social">@archivaldustbunny</a></p>
+        </div>
+
+        <div class="cast-card">
+          <img src="images\cast\kit.webp" alt="Kit" class="profile-image" />
+          <h3 class="cast-name">Kit (they/them)</h3><br>
+          <h4 class="cast-title">Producer, Cast (Daffodil)</h4>
+          <p class="cast-bio">Kit is a queer & disabled TTRPG streamer, writer, & voiceover artist who likes long scrolls through lore documents & curating absolutely bonkers character playlists. Find them talking disability & TTRPGs on Bluesky! <br><a href="https://bsky.app/profile/kitrole.bsky.social">@kitrole</a></p>
+        </div>
+
+        <!-- Add more cast members as needed -->
       </div>
-    </div>
-  
-    <button id="nextBtn">Next</button>
-  </div>
+    </section>
+
+  </main>
 
   <div id="footer-placeholder"></div>
   <script src="scripts/common.js"></script>

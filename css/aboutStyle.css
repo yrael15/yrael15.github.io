@@ -1,0 +1,93 @@
+.top-grid-container {
+  display: flex;
+  justify-content: center;
+  padding: 3rem 1rem;
+}
+
+.top-grid {
+  display: flex;
+  gap: 2rem;
+  max-width: 1200px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Shared style for each of the top three blocks */
+.about-block,
+.support-block,
+.setting-block {
+  flex: 1 1 30%;
+  min-width: 280px;
+  padding: 2rem;
+  background-color: var(--bg-light);
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.about-block p,
+.support-block p,
+.setting-block p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--text-color);
+}
+
+.section-title.center {
+  text-align: center;
+}
+
+.button-group.center {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+/* Cast grid */
+/* Ensure cast-section has side padding */
+.cast-section {
+  padding: 0 2rem;
+}
+
+/* Control layout of cast cards */
+.cast-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Make all cast cards consistent */
+.cast-card {
+  background-color: #eec3fa;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  width: 300px;
+  text-align: center;
+}
+
+/* Standardize profile image size */
+.profile-image {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+/* Cast text styling */
+.cast-name {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: var(--secondary);
+}
+
+.cast-bio {
+  font-size: 0.95rem;
+  color: #333;
+}
