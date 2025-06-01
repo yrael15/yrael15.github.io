@@ -6,16 +6,16 @@ let userClicked = false;
 
 const modalData = [
   {
-    src: "images/characters/belladonna.webp",
+    src: "images/banners/modal/LogoSolo-CLR.png",
     title: "Vote Today!",
     text: "Be sure to vote for Bloom&Blight for Best Audio and Sound Design in a Podcast in the CritAwards! Voting is open until June 30th, and anybody can vote!",
     link: {
             url: "#",
-            text: "Meet them now!"
+            text: "Vote Here"
     }
   },  
   {
-    src: "images/characters/belladonna.webp",
+    src: "images/banners/modal/Website_Character_Portraits.png",
     title: "Bloom",
     text: "The latest team in generations of magical girls, Bloom protects Oliva Bay with a dedication that transcends their recent casualties. ",
     link: {
@@ -33,12 +33,12 @@ const modalData = [
     }
   },
   {
-    src: "",
+    src: "images/banners/modal/Archives_1.png",
     title: "The Faces Behind the Magic!",
     text: "Our amazing cast and crew of award-winning performers and producers work tirelessly to bring you stories of love, loss, healing, and queerness. ",
     link: {
-            url: "https://open.spotify.com/show/3zkX7azMygmGSxMFVG7QKJ?si=251c085982e44555",
-            text: "Find us on Spotify today!"
+            url: "/about.html#cast",
+            text: "Check them out!"
     }
   },
   {
