@@ -10,7 +10,7 @@ const modalData = [
     title: "Bloom",
     text: "Meet our team, Bloom, as they confront new and ancient evils.",
     link: {
-            url: "/characters",
+            url: "/characters.html",
             text: "Meet them all now!"
     }
   },
@@ -84,22 +84,6 @@ function showSlides(n) {
   }
 }
 
-// function openModal(index) {
-//   isModalOpen = true;
-//   clearTimeout(slideTimeout);
-
-//   const modal = document.getElementById("modal");
-//   const modalImage = document.getElementById("modalImage");
-//   const modalTitle = document.getElementById("modalTitle");
-//   const modalDescription = document.getElementById("modalDescription");
-
-//   const data = modalData[index];
-//   modalImage.src = data.src;
-//   modalTitle.textContent = data.title;
-//   modalDescription.textContent = data.text;
-
-//   modal.style.display = "block";
-// }
 function openModal(index) {
   isModalOpen = true;
   clearTimeout(slideTimeout);
@@ -174,7 +158,6 @@ window.onclick = function (event) {
   }
 };
 
-// Optional: ESC key closes modal
 document.addEventListener("keydown", (event) => {
   if (event.key === "Escape" && isModalOpen) {
     closeModal();
