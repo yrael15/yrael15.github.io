@@ -10,7 +10,7 @@ body {
   font-family: 'Helvetica Now', Helvetica, Arial, sans-serif;
   overflow-x: hidden;
   background: linear-gradient(135deg, #6aaec6, #eec3fa);
-  padding-bottom: 60px; /* height of footer */
+  padding-bottom: 60px;
 }
 
 
@@ -144,7 +144,7 @@ p {
 
 #prevBtn {
   position: absolute;
-  left: 1em;         /* was right: 1em */
+  left: 1em;
   bottom: 1em;
   background: var(--secondary);
   color: white;
@@ -167,13 +167,13 @@ p {
 
 .thumbnails img {
   cursor: pointer;
-  border: 2px solid transparent;
+  border: 2px solid var(--primary-1);;
   border-radius: 4px;
-  transition: border 0.3s;
+  transition: border 0.3s ease;
 }
 
 .thumbnails img:hover {
-  border: 2px solid var(--primary-1);
+  border: 2px solid var(--secondary);
 }
 
 .navbar {
@@ -201,10 +201,10 @@ p {
 }
 
 .navbar a {
-  padding: 0 10px;         /* no vertical padding */
+  padding: 0 10px;
   display: flex;
-  align-items: center;     /* vertical center */
-  height: 40px;            /* fixed height to align */
+  align-items: center;
+  height: 40px;
   color: black;
   text-decoration: none;
 }
@@ -259,7 +259,7 @@ nav.navbar a.logo-link:hover {
   display: none;
   position: absolute;
   top: 0;
-  right: 100%; /* Force it to the left of the parent */
+  right: 100%;
   background-color: #eec3fa;
   min-width: 160px;
   z-index: 1001;
@@ -272,7 +272,6 @@ nav.navbar a.logo-link:hover {
   display: block;
 }
 
-/* Optional: Support third-level dropdowns */
 .nested-dropdown .nested-menu .nested-dropdown:hover > .nested-menu {
   display: block;
   position: absolute;
@@ -317,8 +316,8 @@ nav.navbar a.logo-link:hover {
 }
 
 .info-box img {
-  width: 80%;            /* Scale horizontally */
-  height: auto;           /* Maintain aspect ratio */
+  width: 80%;
+  height: auto;
   object-fit: contain;
   margin: 0 auto 1rem;
   display: block;
@@ -333,15 +332,15 @@ nav.navbar a.logo-link:hover {
 /* Media contianers */
 .embed-row {
   display: flex;
-  gap: 2rem; /* space between items */
-  justify-content: center; /* center horizontally */
-  flex-wrap: wrap; /* wrap on small screens */
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
   margin: 2rem 0;
 }
 
 .embed-item {
-  flex: 1 1 300px; /* flexible width, min 300px */
-  max-width: 500px; /* max width so they don’t get too wide */
+  flex: 1 1 300px;
+  max-width: 500px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -349,7 +348,7 @@ nav.navbar a.logo-link:hover {
 
 .media-container {
   position: relative;
-  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  padding-bottom: 56.25%;
   height: 0;
   overflow: hidden;
   width: 100%;
@@ -365,21 +364,21 @@ nav.navbar a.logo-link:hover {
 }
 
 .menu-toggle {
-  display: none; /* Hidden by default */
+  display: none;
 }
 
 /* MOBILE MENU */
 @media (max-width: 768px) {
   .menu-toggle {
-    display: block; /* visible on mobile */
+    display: block;
   }
 
   .nav-links {
-    display: none; /* hide nav links by default on mobile */
+    display: none;
   }
 
   .nav-links.active {
-    display: flex; /* show nav links when active */
+    display: flex;
     flex-direction: column;
   }
   .nav-links li {
@@ -400,10 +399,9 @@ nav.navbar a.logo-link:hover {
     max-height: 40px;
   }
 
-  /* Optional: reduce padding in navbar */
   nav.navbar {
     padding: 0.5rem 1rem;
-    height: auto; /* remove fixed height */
+    height: auto;
   }
 }
 
@@ -510,7 +508,7 @@ a:focus, button:focus {
 }
 
 .column {
-  background-color: transparent; /* Remove box background */
+  background-color: transparent;
   padding: 0 2rem;
   position: relative;
 }
@@ -552,7 +550,7 @@ a:focus, button:focus {
   right: 0;
   height: 100%;
   width: 1px;
-  background-color: rgba(255, 255, 255, 0.2); /* Subtle vertical line */
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .column h3 {
@@ -561,7 +559,7 @@ a:focus, button:focus {
 }
 
 .column p {
-  color: #000000; /* Paragraph text in black */
+  color: #000000;
 }
 
 .column-image {
