@@ -7,28 +7,44 @@ let userClicked = false;
 const modalData = [
   {
     src: "images/characters/belladonna.webp",
+    title: "Vote Today!",
+    text: "Be sure to vote for Bloom&Blight for Best Audio and Sound Design in a Podcast in the CritAwards! Voting is open until June 30th, and anybody can vote!",
+    link: {
+            url: "#",
+            text: "Meet them now!"
+    }
+  },  
+  {
+    src: "images/characters/belladonna.webp",
     title: "Bloom",
-    text: "Meet our team, Bloom, as they confront new and ancient evils.",
+    text: "The latest team in generations of magical girls, Bloom protects Oliva Bay with a dedication that transcends their recent casualties. ",
     link: {
             url: "/characters.html",
-            text: "Meet them all now!"
+            text: "Meet them now!"
     }
-  },
-  {
-    src: "images/logo/Copy_of_Copy_of_Garden_Club_Album_Cover_20250526_215623_0000.png",
-    title: "The Garden Club",
-    text: "Ever wonder why something happens? Check out the talkback!",
-    embed: `<iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/4xa8FUe8RBO6Ksm8puZPX4?utm_source=generator" width="100%" height="200" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>`
   },
   {
     src: "images/logo/BloomBlight_Podcast_Album_Cover.png",
     title: "About Bloom&Blight",
-    text: "We are a queer and trans led Girl by Moonlight actual play podcast following the titular magical girl team Bloom. After securing victory against their nemesis at a devastating cost, the strained team finds themselves drawn back together as whispers of evil begin again."
+    text: "We are a queer and trans led, majority BIPOC, Girl by Moonlight actual play podcast following the titular magical girl team Bloom. Set just a few months after their leader sacrificed herself to save the world, our story follows the magical girls of Bloom as they learn how to overcome their grief, and confront the evil beginning to stir again.",
+    link: {
+            url: "https://open.spotify.com/show/3zkX7azMygmGSxMFVG7QKJ?si=251c085982e44555",
+            text: "Find us on Spotify today!"
+    }
+  },
+  {
+    src: "",
+    title: "The Faces Behind the Magic!",
+    text: "Our amazing cast and crew of award-winning performers and producers work tirelessly to bring you stories of love, loss, healing, and queerness. ",
+    link: {
+            url: "https://open.spotify.com/show/3zkX7azMygmGSxMFVG7QKJ?si=251c085982e44555",
+            text: "Find us on Spotify today!"
+    }
   },
   {
     src: "images/logo/discord.png",
     title: "Join Our Community",
-    text: "Connect with other fans and share your theories and art!",
+    text: "Connect with other fans, discuss episodes, chat with cast & crew, and even get exclusive sneak peeks in the official DarefulArchives Community Discord!",
     link: {
             url: "https://discord.gg/queFxm2txX",
             text: "Join today!"

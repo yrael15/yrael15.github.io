@@ -20,6 +20,7 @@
 
 .review-carousel-track img {
   width: 60vw;
+  object-position: center;
   height: auto;
   object-fit: cover;
   flex-shrink: 0;

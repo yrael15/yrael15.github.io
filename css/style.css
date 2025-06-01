@@ -569,3 +569,54 @@ a:focus, button:focus {
   margin-bottom: 1rem;
   object-fit: cover;
 }
+
+.sponsors-section {
+  padding: 4rem 2rem;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-top: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.section-title {
+  text-align: center;
+  color: var(--secondary);
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+}
+
+.section-subtitle {
+  text-align: center;
+  color: #222;
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+}
+
+.sponsor-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.sponsor-card {
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  text-align: center;
+  width: 300px;
+}
+
+.sponsor-logo {
+  max-width: 100%;
+  max-height: 100px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+.sponsor-text {
+  font-size: 0.95rem;
+  color: #333;
+  line-height: 1.5;
+}

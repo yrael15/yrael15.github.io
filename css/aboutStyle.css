@@ -33,6 +33,14 @@
   color: var(--text-color);
 }
 
+.block-image {
+  display: block;
+  max-width: 80%;
+  height: auto;
+  margin: 0 auto 1rem; /* Center it and give space below */
+  border-radius: 0.5rem; /* Optional for softer look */
+}
+
 .section-title.center {
   text-align: center;
 }
