@@ -1,0 +1,59 @@
+.review-carousel-container {
+  display: flex;
+  justify-content: center;
+  margin: 3rem 0;
+  padding: 0 2rem;
+}
+
+.review-carousel {
+  width: 60vw;
+  overflow: hidden;
+  position: relative;
+  border-radius: 1rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.review-carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.review-carousel-track img {
+  width: 60vw;
+  height: auto;
+  object-fit: cover;
+  flex-shrink: 0;
+  max-height: 375px;
+  aspect-ratio: 3 / 1;
+}
+
+#review-prevBtn,
+#review-nextBtn {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: transparent;
+  border: none;
+}
+
+#review-prevBtn:hover,
+#review-nextBtn:hover {
+  background-color: var(--primary-2);
+}
+
+#review-prevBtn {
+  left: 1rem;
+}
+
+#review-nextBtn {
+  right: 1rem;
+}

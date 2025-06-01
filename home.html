@@ -6,6 +6,7 @@
   <title>Bloom&Blight</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/heroStyle.css">
+  <link rel="stylesheet" href="css/reviewCarouselStyle.css">
   <link rel="stylesheet" href="css/footerStyle.css">
 </head>
 <body>
@@ -16,7 +17,7 @@
 
   <div class="mySlides fade">
     <img src="images\characters\Website_Banner_Bloom_Blight.png.png" style="width:100%">
-    <div class="caption-text">Members of Bloom!</div>
+    <div class="caption-text">Meet the Members of Bloom!</div>
   </div>
 
   <div class="mySlides fade">
@@ -26,7 +27,7 @@
 
   <div class="mySlides fade">
     <img src="images\banners\A_story_of_Magic_and_Grief._And_how_we_heal._2.png" style="width:100%">
-    <div class="caption-text">The magic behind the characters, Our Cast and Crew!</div>
+    <div class="caption-text">The Magic Behind the Characters, Our Cast and Crew!</div>
   </div>
 
   <div class="mySlides fade">
@@ -57,7 +58,7 @@
       <a href="https://open.spotify.com/show/3zkX7azMygmGSxMFVG7QKJ?si=f2c06cd746f44203" class="button">Spotify Link</a>
     </div>
     <div class="column">
-      <h3>The Garden Club: A Bloom&Blight Talkback Podcast</h3>
+      <h3>The Garden Club</h3>
       <img src="images\logo\Copy_of_Copy_of_Garden_Club_Album_Cover_20250526_215623_0000.png" alt="Column 2" class="column-image" />
       <p>The talkback podcast about the queer and trans led Girl by Moonlight actual play podcast following the titular magical girl team Bloom. After securing victory against their nemesis at a devastating cost, the strained team finds themselves drawn back together as whispers of evil begin again.</p>
       <a href="https://open.spotify.com/episode/4xa8FUe8RBO6Ksm8puZPX4?si=64a9076e975c4a13" class="button">Latest Episode</a>
@@ -70,7 +71,19 @@
     </div>
   </section>
 
-  <div id="footer-placeholder"></div>
+  <section class="review-carousel-container">
+    <div class="review-carousel" id="review-carousel">
+      <div class="review-carousel-track" id="review-carousel-track">
+        <img src="images\reviews\The_gold_standard_for_1.png" alt="Gold Star Background" />
+        <img src="images\reviews\The_gold_standard_for.png" alt="Gold Star Transparent" />
+      </div>
+      <button id="review-prevBtn">❮</button>
+      <button id="review-nextBtn">❯</button>
+    </div>
+  </section>
+
+
+<div id="footer-placeholder"></div>
 
   <div id="modal" class="modal">
     <div class="modal-content">
@@ -86,5 +99,6 @@
   </div>
   <script src="scripts/common.js"></script>
   <script src="scripts/hero.js"></script>
+  <script src="scripts/reviewCarousel.js"></script>
 </body>
 </html>

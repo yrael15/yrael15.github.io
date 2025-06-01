@@ -272,6 +272,13 @@ nav.navbar a.logo-link:hover {
   display: block;
 }
 
+/* Optional: Support third-level dropdowns */
+.nested-dropdown .nested-menu .nested-dropdown:hover > .nested-menu {
+  display: block;
+  position: absolute;
+  right: 100%;
+  top: 0;
+}
 
 /* Cute boxes */
 .info-box-container {
