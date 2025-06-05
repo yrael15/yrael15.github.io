@@ -1,0 +1,64 @@
+p,h1, h2 {
+  margin-top: 2rem;
+  padding-left: 2rem;
+}
+
+.image-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  padding-left: 2rem;
+}
+
+.image-grid img {
+  width: 150px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+}
+
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  padding-top: 60px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+  display: block;
+  margin: 60px auto;
+  max-width: 90%;
+  max-height: 80vh;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.download-icon {
+  position: absolute;
+  top: 20px;
+  right: 80px; /* adjust based on how close you want it to the "×" */
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.5));
+  transition: opacity 0.2s;
+}
+
+.download-icon:hover {
+  opacity: 0.8;
+}

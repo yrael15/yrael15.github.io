@@ -15,7 +15,7 @@
 /* Shared style for each of the top three blocks */
 .about-block,
 .support-block,
-.setting-block {
+.dareful-block {
   flex: 1 1 30%;
   min-width: 280px;
   padding: 2rem;
@@ -27,7 +27,7 @@
 
 .about-block p,
 .support-block p,
-.setting-block p {
+.dareful-block p {
   font-size: 1.1rem;
   line-height: 1.6;
   color: var(--text-color);
@@ -37,8 +37,8 @@
   display: block;
   max-width: 80%;
   height: auto;
-  margin: 0 auto 1rem; /* Center it and give space below */
-  border-radius: 0.5rem; /* Optional for softer look */
+  margin: 0 auto 1rem;
+  border-radius: 0.5rem;
 }
 
 .section-title.center {

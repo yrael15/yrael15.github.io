@@ -13,7 +13,6 @@ body {
   padding-bottom: 60px;
 }
 
-
 /* Color Palette */
 :root {
   --primary-1: #6aaec6;
@@ -167,7 +166,7 @@ p {
 
 .thumbnails img {
   cursor: pointer;
-  border: 2px solid var(--primary-1);;
+  border: 2px solid var(--primary-1);
   border-radius: 4px;
   transition: border 0.3s ease;
 }
@@ -214,7 +213,6 @@ p {
   color: #fff;
 }
 
-/* Override for logo link hover */
 nav.navbar a.logo-link:hover {
   background-color: transparent !important;
   color: inherit !important;
@@ -322,14 +320,7 @@ nav.navbar a.logo-link:hover {
   margin: 0 auto 1rem;
   display: block;
 }
-/* Mobile fallback: stack vertically */
-@media (max-width: 768px) {
-  .info-box {
-    flex: 1 1 100%;
-  }
-}
 
-/* Media contianers */
 .embed-row {
   display: flex;
   gap: 2rem;
@@ -364,131 +355,15 @@ nav.navbar a.logo-link:hover {
 }
 
 .menu-toggle {
-  display: none;
-}
-
-/* MOBILE MENU */
-@media (max-width: 768px) {
-  .menu-toggle {
-    display: block;
-  }
-
-  .nav-links {
-    display: none;
-  }
-
-  .nav-links.active {
-    display: flex;
-    flex-direction: column;
-  }
-  .nav-links li {
-    padding: 0.75em 1em;
-    text-align: center;
-  }
-
-  .nav-links li a {
-    font-size: 1.2em;
-  }
-
-  /* Adjust logo container so it doesn’t get weird */
-  .logo-containter {
-    max-height: 50px;
-  }
-  
-  .logo-link img {
-    max-height: 40px;
-  }
-
-  nav.navbar {
-    padding: 0.5rem 1rem;
-    height: auto;
-  }
-}
-
-@media (max-width: 768px) {
-  .container {
-    margin: 1em;
-    padding: 0 1em;
-  }
-
-  .info-box-container {
-    margin: 1em;
-    gap: 1em;
-  }
-}
-
-@media (max-width: 768px) {
-  .navbar {
-    height: auto;
-  }
-}
-
-@media (max-width: 768px) {
-  .carousel-content {
-    flex-direction: column;
-    gap: 1em;
-    text-align: center;
-  }
-
-  .carousel-content img {
-    max-width: 100%;
-    height: auto;
-  }
-
-  .text-block {
-    max-width: 100%;
-    padding: 0 1em;
-  }
-
-  #nextBtn {
-    position: static;
-    margin: 1em auto;
-    display: block;
-  }
-
-  .thumbnails {
-    flex-wrap: wrap;
-    gap: 0.5em;
-  }
-
-  .thumbnails img {
-    width: 60px;
-    height: auto;
-  }
-}
-
-.carousel-controls {
-  display: flex;
-  justify-content: center;
-  gap: 1em;
-  margin-top: 1em;
-}
-
-.carousel-controls button {
-  background: var(--secondary);
-  color: white;
+  background: none;
   border: none;
-  padding: 0.5em 1.5em;
-  font-size: 1.2em;
+  padding: 0;
   cursor: pointer;
-  border-radius: 4px;
-  transition: background 0.3s ease;
 }
 
-.carousel-controls button:hover {
-  background: var(--primary-2);
-}
-
-@media (max-width: 768px) {
-  .carousel-controls {
-    flex-direction: row;
-    justify-content: center;
-  }
-
-  .carousel-controls button {
-    padding: 0.5em 1em;
-    font-size: 1em;
-  }
+.menu-icon {
+  width: 40px;
+  height: auto;
 }
 
 a:focus, button:focus {
@@ -520,12 +395,14 @@ a:focus, button:focus {
 .column h3 {
   color: var(--primary-2, #cfb8ff);
   margin-bottom: 1rem;
+  text-align: center;
 }
 
 .column p {
   font-size: 1rem;
   line-height: 1.6;
   margin-bottom: 1.5rem;
+  color: #000000;
 }
 
 .column .button {
@@ -551,15 +428,6 @@ a:focus, button:focus {
   height: 100%;
   width: 1px;
   background-color: rgba(255, 255, 255, 0.2);
-}
-
-.column h3 {
-  text-align: center;
-  color: #82745f;
-}
-
-.column p {
-  color: #000000;
 }
 
 .column-image {
