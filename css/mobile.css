@@ -106,11 +106,17 @@
 
 @media (max-width: 768px) {
   .slideshow-container {
-    height: 250px;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
   }
 
   .mySlides img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
     object-position: top;
+    display: block;
   }
 
   .caption-text {
