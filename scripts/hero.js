@@ -10,7 +10,7 @@ const modalData = [
     title: "Vote Today!",
     text: "Be sure to vote for Bloom&Blight for Best Audio and Sound Design in a Podcast in the CritAwards! Voting is open until June 30th, and anybody can vote!",
     link: {
-            url: "#",
+            url: "https://docs.google.com/forms/d/e/1FAIpQLSf8YSKrjEei20hfNnH1TgJ3MgeNoTcjEcEuT_zaOVWHASuCXQ/viewform",
             text: "Vote Here"
     }
   },  

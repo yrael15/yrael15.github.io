@@ -1,20 +1,31 @@
-// Include nav and footer (if using JS includes)
 function loadIncludes() {
   fetch('nav.html')
     .then(res => res.text())
     .then(data => {
       document.getElementById('nav-placeholder').innerHTML = data;
 
-      // After nav is loaded, attach the mobile toggle event listener here:
       const menuToggle = document.querySelector('.menu-toggle');
       const navLinks = document.querySelector('.nav-links');
 
       if (menuToggle && navLinks) {
         menuToggle.addEventListener('click', () => {
           navLinks.classList.toggle('active');
+          document.body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : '';
         });
       } else {
         console.warn('Menu toggle button or nav-links container not found');
+      }
+
+      // MOBILE dropdown toggling
+      if (window.innerWidth <= 768) {
+        const dropdownLinks = document.querySelectorAll('.dropdown > a, .nested-dropdown > a');
+        dropdownLinks.forEach(link => {
+          link.addEventListener('click', function (e) {
+            const parent = this.parentElement;
+            e.preventDefault();
+            parent.classList.toggle('open');
+          });
+        });
       }
     });
 
@@ -27,12 +38,13 @@ if (document.getElementById('nav-placeholder')) {
   loadIncludes();
 }
 
+// Desktop hover logic for nested dropdowns
 document.querySelectorAll('.nested-dropdown').forEach(item => {
   item.addEventListener('mouseenter', () => {
     const submenu = item.querySelector('.nested-menu');
     if (!submenu) return;
 
-    submenu.style.display = 'block'; // Show temporarily to measure
+    submenu.style.display = 'block'; // Temporarily show to measure
     const rect = submenu.getBoundingClientRect();
     const viewportWidth = window.innerWidth || document.documentElement.clientWidth;
 
@@ -52,3 +64,4 @@ document.querySelectorAll('.nested-dropdown').forEach(item => {
     }
   });
 });
+

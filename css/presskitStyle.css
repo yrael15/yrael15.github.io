@@ -5,21 +5,22 @@
 }
 
 .top-grid {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
   max-width: 1200px;
-  justify-content: center;
-  flex-wrap: wrap;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 auto;
 }
 
 .press-block {
-  flex: 1 1 30%;
-  min-width: 280px;
   padding: 2rem;
   background-color: var(--bg-light);
   border-radius: 1rem;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   text-align: center;
+  width: 100%;
 }
 
 .press-block p {

@@ -1,0 +1,48 @@
+
+.info-block {
+  flex: 0 0 auto;
+  width: 90%;
+  max-width: 600px;
+  margin: 1.5rem auto;
+  padding: 1.5rem;
+  background-color: transparent;
+  text-align: center;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+.info-block h2 {
+  color: #82745f; /* Season title */
+  margin-bottom: 1rem;
+}
+
+.episode-title {
+  font-weight: bold;
+  color: var(--secondary); /* Episode name */
+  margin-top: 1rem;
+}
+
+.transcript-links a {
+  display: inline-block;
+  color: black; /* Link text */
+  text-decoration: none;
+  margin-right: 1rem;
+  margin-top: 0.25rem;
+}
+
+.transcript-links a:hover {
+  text-decoration: underline;
+}
+
+.info-block ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: inline-block; /* Center the list itself */
+  text-align: left; /* Optional: keep text inside list items aligned left */
+}
+
+.info-block li {
+  margin-bottom: 0.5rem;
+}

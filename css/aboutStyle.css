@@ -12,10 +12,7 @@
   flex-wrap: wrap;
 }
 
-/* Shared style for each of the top three blocks */
-.about-block,
-.support-block,
-.dareful-block {
+.info-block {
   flex: 1 1 30%;
   min-width: 280px;
   padding: 2rem;
@@ -25,13 +22,12 @@
   text-align: center;
 }
 
-.about-block p,
-.support-block p,
-.dareful-block p {
+.info-block p {
   font-size: 1.1rem;
   line-height: 1.6;
   color: var(--text-color);
 }
+
 
 .block-image {
   display: block;
